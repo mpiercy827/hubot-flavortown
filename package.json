@@ -1,7 +1,7 @@
 {
   "name": "hubot-flavortown",
   "description": "Spice up conversations with quotes from Guy Fieri.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Matt Piercy <mpiercy@gmail.com>",
   "license": "MIT",
   "keywords": "hubot, hubot-scripts, flavortown, fieri",
