@@ -12,16 +12,14 @@ describe 'flavortown', ->
   afterEach ->
     @room.destroy()
 
-  it 'responds to hello', ->
-    @room.user.say('alice', '@hubot hello').then =>
-      expect(@room.messages).to.eql [
-        ['alice', '@hubot hello']
-        ['hubot', '@alice hello!']
-      ]
+  it 'responds to flavortown', ->
+    @room.user.say('alice', '@hubot flavortown').then =>
+      expect(@room.messages[0]).to.eql ['alice', '@hubot flavortown']
+      expect(@room.messages[1][0]).to.eql 'hubot'
+      expect(@room.messages[1][1].split(" ")[0]).to.eql '@alice'
 
-  it 'hears orly', ->
-    @room.user.say('bob', 'just wanted to say orly').then =>
-      expect(@room.messages).to.eql [
-        ['bob', 'just wanted to say orly']
-        ['hubot', 'yarly']
-      ]
+  it 'hears take me to flavortown', ->
+    @room.user.say('bob', 'take me to flavortown').then =>
+      expect(@room.messages[0]).to.eql ['bob', 'take me to flavortown']
+      expect(@room.messages[1][0]).to.eql 'hubot'
+      expect(@room.messages[1][1].split(" ")[0]).to.not.eql '@bob'
