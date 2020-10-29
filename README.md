@@ -21,8 +21,8 @@ Then add **hubot-flavortown** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot flavortown
+hubot>> So much salami, call my mommy
 ```
 
 ## NPM Module

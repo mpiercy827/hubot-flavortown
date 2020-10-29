@@ -2,8 +2,8 @@
 #   Spice up conversations with quotes from Guy Fieri.
 #
 # Commands:
-#   hubot flavortown - So much salami, call my mommy
-#   take me to flavortown - Peace, Love and taco grease
+#   hubot flavortown - Returns a quote from Guy Fieri.
+#   take me to flavortown - Another way of returning the decrees of Flavortown.
 #
 # Author:
 #   Matt Piercy <mpiercy@gmail.com>
